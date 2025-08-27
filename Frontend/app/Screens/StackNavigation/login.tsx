@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Settings() {
+export default function Login() {
   return (
     <View style={containerStyles.container}>
       <Text>Aquí se verán los servicios agendados</Text>

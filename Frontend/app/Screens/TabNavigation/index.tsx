@@ -1,17 +1,19 @@
-import { Image, SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { Images } from "@/app/utils/images";
+import { Image, SafeAreaView, StyleSheet, View } from "react-native";
 
-const bgImage = require("../../assets/images/favicon.png");
+import { ScheduleButton, ServiceButton } from "@/components/indexComponents";
 
 export default function Index() {
   return (
     <SafeAreaView style={{flex: 1}}>
       <Image
-        source={bgImage}
+        source={Images.favicon}
         style={containerStyles.backgroundImage}
         resizeMode="contain"
       />
       <View style={containerStyles.container}>
-        <Text style={containerStyles.text}>Vista principal del Home</Text>
+        <ServiceButton/>
+        <ScheduleButton/>
       </View>
     </SafeAreaView>
   );
