@@ -13,7 +13,7 @@ export default function RootLayout() {
   return (
     <NavigationIndependentTree>
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName='Login'>
           <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
           <Stack.Screen name="Index" component={TabLayout} options={{headerShown: false}}/>
           <Stack.Screen name="ServRequest_P1" component={ServReq_PhaseOne} options={{

@@ -1,7 +1,7 @@
 import { Images } from "@/app/utils/images";
 import { Image, SafeAreaView, StyleSheet, View } from "react-native";
 
-import { ScheduleButton, ServiceButton } from "@/components/indexComponents";
+import { ScheduleButton, ServiceButton } from "@/components/indexComponents/indexComponents";
 
 export default function Index() {
   return (
